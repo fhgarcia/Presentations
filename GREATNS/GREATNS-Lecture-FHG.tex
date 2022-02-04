@@ -1,0 +1,233 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass[table]{beamer}
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+%\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{epstopdf}
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{multirow}
+\usepackage[export]{adjustbox}
+\usepackage{gensymb}
+\renewcommand\footnoterule{{\color{black}\hrule height 0pt}}
+\usepackage{appendixnumberbeamer} 
+\usepackage{textgreek}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{gensymb}
+\graphicspath{{pics}}
+\usepackage[normalem]{ulem}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\newcommand{\overbar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
+
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{itemize items}[circle]
+
+\usepackage[absolute,overlay]{textpos}
+
+%\AtBeginSection{\frame{\sectionpage}}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[GREAT-NS Lecture 7]{Isotopes and the Chart of Nuclides} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{Fatima H. Garcia} % Your name
+\institute[] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{
+} % Date, can be changed to a custom date
+\date{March 8th, 2022}
+
+
+
+\begin{document}
+
+\section{Elements vs Isotopes}
+\begin{frame}
+\titlepage % Print the title page as the first slide
+\end{frame}
+
+\section{Periodic table vs Chart of Nuclides}
+\begin{frame}
+\frametitle{Chemistry: the periodic table}
+It sorts the known elements into periods (rows) and groups (columns) with similar properties
+\begin{figure}
+\center
+\includegraphics[width=0.9\textwidth]{Periodic-table.jpg}
+\end{figure}
+\let\thefootnote\relax\footnote{\tiny{Chemistry Learner: https://www.chemistrylearner.com/the-periodic-table}}
+\end{frame}
+
+\begin{frame}
+\frametitle{Groups: the alkalis}
+\begin{figure}
+\includegraphics[width=0.9\textwidth]{Alkalis.png}
+\end{figure}
+These elements have one extra electron, ready to be donated. Pretty reactive; the metallic elements will explode on contact with water
+\let\thefootnote\relax\footnote{\tiny{Chemistry Learner: https://www.chemistrylearner.com/the-periodic-table}}
+\end{frame}
+
+\begin{frame}
+\frametitle{Groups: the halogens}
+\begin{figure}
+\includegraphics[width=0.9\textwidth]{Halogens.png}
+\end{figure}
+Also pretty reactive, these elements need one more electron to close their shells. 
+\let\thefootnote\relax\footnote{\tiny{Chemistry Learner: https://www.chemistrylearner.com/the-periodic-table}}
+\end{frame}
+
+\begin{frame}
+\frametitle{Groups: the noble gases}
+\begin{figure}
+\includegraphics[width=0.9\textwidth]{NobleGases.png}
+\end{figure}
+These elements have a full complement of electrons and therefore are not keen on interacting with anything. 
+\let\thefootnote\relax\footnote{\tiny{Chemistry Learner: https://www.chemistrylearner.com/the-periodic-table}}
+\end{frame}
+
+\begin{frame}
+\frametitle{The Chart of Nuclides}
+The periodic table for nuclear science; arranging isotopes by their proton and neutron numbers
+\begin{figure}
+\includegraphics[width=0.9\textwidth]{NNDCChart.png}
+\end{figure}
+\let\thefootnote\relax\footnote{\tiny{NNDC: https://www.nndc.bnl.gov/nudat3/nudat2.jsp}}
+\end{frame}
+
+\begin{frame}
+\frametitle{The Chart of Nuclides}
+\begin{figure}
+\includegraphics[width=0.9\textwidth]{Chart1.png}
+\end{figure}
+\let\thefootnote\relax\footnote{\tiny{NNDC: https://www.nndc.bnl.gov/nudat3/nudat2.jsp}}
+\end{frame}
+
+\begin{frame}
+\frametitle{The Chart of Nuclides}
+\begin{figure}
+\includegraphics[width=0.9\textwidth]{Chart2.png}
+\end{figure}
+\let\thefootnote\relax\footnote{\tiny{NNDC: https://www.nndc.bnl.gov/nudat3/nudat2.jsp}}
+\end{frame}
+
+\begin{frame}
+\frametitle{The Chart of Nuclides}
+\begin{figure}
+\includegraphics[width=0.9\textwidth]{Chart3.png}
+\end{figure}
+\let\thefootnote\relax\footnote{\tiny{NNDC: https://www.nndc.bnl.gov/nudat3/nudat2.jsp}}
+\end{frame}
+
+\begin{frame}
+\frametitle{The Chart of Nuclides}
+\begin{figure}
+\includegraphics[width=0.9\textwidth]{Chart4.png}
+\end{figure}
+\let\thefootnote\relax\footnote{\tiny{NNDC: https://www.nndc.bnl.gov/nudat3/nudat2.jsp}}
+\end{frame}
+
+\section{Notation}
+\begin{frame}
+
+\end{frame}
+
+\section{Trends in the chart}
+\begin{frame}
+
+\end{frame}
+
+\section{Isotopes, isobars and isotones}
+\begin{frame}
+
+\end{frame}
+
+\section{Applications of isotopic properties}
+\begin{frame}
+
+\end{frame}
+
+\section{Resources}
+\begin{frame}
+
+\end{frame}
+ 
+ 
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+%\section{Introduction} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
+%------------------------------------------------
+\begin{frame}
+\frametitle{Some title}
+\end{frame}
+
+\end{document} 
+
