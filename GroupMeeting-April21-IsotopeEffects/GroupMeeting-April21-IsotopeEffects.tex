@@ -1,0 +1,282 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass[table]{beamer}
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+%\usetheme{CambridgeUS}
+\usetheme{metropolis}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+%\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{epstopdf}
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{multirow}
+\usepackage[export]{adjustbox}
+\usepackage{gensymb}
+\renewcommand\footnoterule{{\color{black}\hrule height 0pt}}
+\usepackage{appendixnumberbeamer} 
+\usepackage{textgreek}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{gensymb}
+\graphicspath{{pics}}
+\usepackage[normalem]{ulem}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\newcommand{\overbar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
+
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{itemize items}[circle]
+
+\usepackage[absolute,overlay]{textpos}
+
+%\AtBeginSection{\frame{\sectionpage}}
+
+%\definecolor{grayprimary}{rgb}{0.77,0.84,0.94}
+%\definecolor{lbnldarkblue}{RGB}{0,49,60}
+%\definecolor{lbnlteal}{RGB}{0,118,129}
+%\definecolor{lbnldarkgray}{RGB}{99,102,106}
+%
+%
+%\setbeamercolor*{palette primary}{use=structure,fg=white, bg=lbnldarkgray}
+%\setbeamercolor*{palette secondary}{use=structure,fg=white,bg=lbnlteal}
+%\setbeamercolor*{palette tertiary}{use=structure,fg=white,bg=lbnldarkblue}
+%\setbeamercolor{title}{fg=lbnldarkblue}
+%%\setbeamercolor*{palette tertiary}{use=structure,fg=white,bg=green}
+%\setbeamercolor{frametitle}{fg=lbnldarkblue}
+%\setbeamercolor{author}{fg=lbnldarkblue}
+%\setbeamercolor{date}{fg=lbnldarkblue}
+%
+%\setbeamertemplate{page number in head/foot}[totalframenumber]
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Group Meeting]{Isotope effects - towards isotope chemistry} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{Fatima H. Garcia}
+\institute[LBNL] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{} % Your email address  % Date, can be changed to a custom date
+\date{April 21, 2022}
+
+
+
+\begin{document}
+\begin{frame}
+\titlepage % Print the title page as the first slide
+%\begin{figure}
+%\includegraphics[width=0.5\textwidth]{logos.png}
+%\end{figure}
+\end{frame}
+ 
+ 
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+
+\section{Definitions}
+\begin{frame}
+\frametitle{Isotope effects}
+\textbf{Kinetic isotope effect}:\\
+Change in chemical reaction rates when the atoms is replaced with  different isotope
+\begin{itemize}
+\item Can be used to determine preferable reaction pathways for optimization
+\item Change is most pronounced with large differences - effect is related to vibration of the bonds
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Isotope effects}
+\textbf{Isotope fractionation}:\\
+Relative partitioning or distribution of isotopes in a natural system based on their mass
+\begin{itemize}
+\item \textbf{Mass/Kinetic}: separation is due to mass differences; in biology, organisms prefer lighter isotopic species
+\item \textbf{Equilibrium/Thermodynamic}: species in chemical eq.; due to reduction in vibrational energy in the substitution of a heavier isotope with a lighter one
+\item \textbf{Transient kinetic}: reactions do not follow first-order reaction rates
+\item \textbf{Mass-independent}: differences are not correlated to mass differences; non-equilibrium processes
+\end{itemize}
+\end{frame}
+
+
+\section{Literature cases}
+
+\begin{frame}
+\frametitle{Literature division}
+\begin{columns}[c]
+\column{0.5\textwidth}
+\textbf{Biology}
+\begin{itemize}
+\item Focus is on Ca, H/D and O
+\item Mostly plants, though some bacteria have been studied
+\item Fractionation is attributed to transfer processes
+\end{itemize}
+\column{0.5\textwidth}
+\textbf{Geology/geochemistry}
+\begin{itemize}
+\item Use of 'standard' samples
+\item Use of 'surrogates'
+\item Different metals are studied in the context of mineral formation
+\end{itemize}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Common themes in the literature}
+\begin{itemize}
+\item Lighter isotopes make weaker bonds within molecules
+\item 'Standards' that are used are very much not standard - its all comparative
+\item Too many factors that would need controls for characterization
+\item Processes for fractionation are not well understood in geology/geochemistry
+\item Use of fractionation to infer environmental conditions such as [O$_{2}$]
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Fractionation and Wine}
+A study was done to use NMR techniques to perform analysis on wine. \\
+They note some interesting things:
+\begin{itemize}
+\item Enrichment techniques had previously been used for studies of photosynthesis
+\item Info about the redistribution of H isotopes in the process of turning glucose and must into ethanol and water
+\item Constant distribution of isotope 'redistribution' matrix allowed for 'fingerprinting' for a specific region
+\begin{itemize}
+\item Isotope ratios are of climatic significance
+\end{itemize}
+\end{itemize} 
+Word of the day: \\
+\textbf{Isotopemer}: \textit{noun} isotopic isomer; same number of each isotope with the molecule but at different positions in the structure
+\vspace{10pt}
+\let\thefootnote\relax\footnote{\tiny{Martin, G. J. \textit{et al.}. J. Agric. Food Chem. 36, 2 (1988) 316-322}}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Calcium}
+\small{
+Hart and Zindler:
+\vspace{-4pt}
+\begin{itemize}
+\item Proposed that a 'mixing' process during fractionation is the cause of deviations between experiment and theory
+\end{itemize}
+\vspace{-4pt}
+Hindshaw \textit{et al.}:
+\vspace{-4pt}
+\begin{itemize}
+\item Significant fractionation is observed in soil and root samples 
+\item Age plays a factor, since nutrient uptake changes with time
+\item More fractionation in the roots than the stems
+\item Incomplete kinetic reactions favour lighter Ca isotopes
+\end{itemize}
+\vspace{-4pt}
+Wang \textit{et al.}:
+\vspace{-4pt}
+\begin{itemize}
+\item  The [M] has an effect on O bond lengths and may be tied to fractionation
+\end{itemize}}
+\vspace{-10pt}
+\let\thefootnote\relax\footnote{\tiny{Hart, S. R. and Zindler, A. Int. J. Mass Spectrom. Ion Pro. 89 (1989) 287-301}}
+\let\thefootnote\relax\footnote{\tiny{Hindshaw, R. S. \textit{et al.} Biogeochemistry 112 (2013) 373-388}}
+\let\thefootnote\relax\footnote{\tiny{Wang, W. \textit{et al.} Geochim. Cosmochim. Acta 208 (2017) 185-197}}
+\end{frame}
+
+\begin{frame}
+\frametitle{Uranium}
+Andersen \textit{et al.}:
+\begin{itemize}
+\item Difference in solubility of the charge states will impact fractionation
+\item Heavier U isotopes favour compounds with lower oxidation states
+\begin{itemize}
+\item Opposite to mass dependent effects, which are due to vibrations
+\end{itemize}
+\item Studies with no U redox show limited fractionation
+\end{itemize}
+Yang \& Liu:
+\begin{itemize}
+\item Nuclear field shift effect may decrease with temperature - also called the nuclear volume effect (?)
+\item Effect scales with the difference of mean-square charge radius
+\end{itemize}
+\vspace{-5pt}
+\let\thefootnote\relax\footnote{\tiny{Andersen, M. B, Stirling, C. H. and Weyer, S. Rev. Mineral Geochem. 82 (2017) 799-850}}
+\let\thefootnote\relax\footnote{\tiny{Yang, S. and Liu, Y. Acta Geochim. 35(3) (2016) 227-239}}
+\end{frame}
+
+%
+%%------------------------------------------------
+%
+
+%
+%\appendix
+%
+%\begin{frame}
+%\frametitle{Beginning of backup slides}
+%\end{frame}
+
+
+%-----------------------------------------------
+
+\end{document} 

@@ -1,0 +1,185 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND THEMES
+%----------------------------------------------------------------------------------------
+
+\documentclass[table]{beamer}
+
+\mode<presentation> {
+
+% The Beamer class comes with a number of default slide themes
+% which change the colors and layouts of slides. Below this is a list
+% of all the themes, uncomment each in turn to see what they look like.
+
+%\usetheme{default}
+%\usetheme{AnnArbor}
+%\usetheme{Antibes}
+%\usetheme{Bergen}
+%\usetheme{Berkeley}
+%\usetheme{Berlin}
+%\usetheme{Boadilla}
+\usetheme{CambridgeUS}
+%\usetheme{Copenhagen}
+%\usetheme{Darmstadt}
+%\usetheme{Dresden}
+%\usetheme{Frankfurt}
+%\usetheme{Goettingen}
+%\usetheme{Hannover}
+%\usetheme{Ilmenau}
+%\usetheme{JuanLesPins}
+%\usetheme{Luebeck}
+%\usetheme{Madrid}
+%\usetheme{Malmoe}
+%\usetheme{Marburg}
+%\usetheme{Montpellier}
+%\usetheme{PaloAlto}
+%\usetheme{Pittsburgh}
+%\usetheme{Rochester}
+%\usetheme{Singapore}
+%\usetheme{Szeged}
+%\usetheme{Warsaw}
+
+% As well as themes, the Beamer class has a number of color themes
+% for any slide theme. Uncomment each of these in turn to see how it
+% changes the colors of your current slide theme.
+
+%\usecolortheme{albatross}
+%\usecolortheme{beaver}
+%\usecolortheme{beetle}
+%\usecolortheme{crane}
+%\usecolortheme{dolphin}
+%\usecolortheme{dove}
+%\usecolortheme{fly}
+%\usecolortheme{lily}
+%\usecolortheme{orchid}
+%\usecolortheme{rose}
+%\usecolortheme{seagull}
+%\usecolortheme{seahorse}
+%\usecolortheme{whale}
+%\usecolortheme{wolverine}
+
+%\setbeamertemplate{footline} % To remove the footer line in all slides uncomment this line
+%\setbeamertemplate{footline}[page number] % To replace the footer line in all slides with a simple slide count uncomment this line
+
+%\setbeamertemplate{navigation symbols}{} % To remove the navigation symbols from the bottom of all slides uncomment this line
+}
+
+\usepackage{graphicx} % Allows including images
+\usepackage{epstopdf}
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{multirow}
+\usepackage[export]{adjustbox}
+\usepackage{gensymb}
+\renewcommand\footnoterule{{\color{black}\hrule height 0pt}}
+\usepackage{appendixnumberbeamer} 
+\usepackage{textgreek}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{gensymb}
+\graphicspath{{pics}}
+\usepackage[normalem]{ulem}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\newcommand{\overbar}[1]{\mkern 1.5mu\overline{\mkern-1.5mu#1\mkern-1.5mu}\mkern 1.5mu}
+
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{itemize items}[circle]
+
+\usepackage[absolute,overlay]{textpos}
+
+%\AtBeginSection{\frame{\sectionpage}}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title[Conference or Meeting Title]{Presentation Title} % The short title appears at the bottom of every slide, the full title is only on the title page
+
+\author{Your Name here}
+\institute[SFU] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+{PhD Candidate \\ Supervisor: Dr. C. Andreoiu \\
+Simon Fraser University \\ % Your institution for the title page
+\medskip
+\textit{email@sfu.ca} % Your email address
+} % Date, can be changed to a custom date
+\date{\today}
+
+
+
+\begin{document}
+%\begin{frame}
+%\titlepage % Print the title page as the first slide
+%\begin{figure}
+%\includegraphics[width=0.5\textwidth]{logos.png}
+%\end{figure}
+%\end{frame}
+ 
+ 
+
+%----------------------------------------------------------------------------------------
+%	PRESENTATION SLIDES
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------------
+
+
+
+\begin{frame}
+\frametitle{Varying the width of the Gaussian}
+\begin{figure}
+\includegraphics[width=\textwidth]{GaussianShapeParams-GaussianWidth.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Varying the amplitude - effect on HoO}
+\begin{figure}
+\includegraphics[width=\textwidth]{Gaussian-VaryShapeParams.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Varying the width - larger amplitude}
+\begin{figure}
+\includegraphics[width=\textwidth]{GaussianShapeParams-GaussianWidth-amp200.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Varying the position}
+\begin{figure}
+\includegraphics[width=0.9\textwidth]{GaussianShapeParams-GaussianWidth-PosVary.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Varying the amplitude}
+\begin{figure}
+\includegraphics[width=0.9\textwidth]{GaussianShapeParams-GaussianWidth-AmpVary.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{HoO values - position and amplitude}
+\begin{figure}
+\includegraphics[width=0.9\textwidth]{GaussianShapeParams-GaussianWidth-AmpVary.png}
+\end{figure}
+\end{frame}
+
+%
+%%------------------------------------------------
+%
+
+%
+%\appendix
+%
+%\begin{frame}
+%\frametitle{Beginning of backup slides}
+%\end{frame}
+
+
+%-----------------------------------------------
+
+\end{document} 
